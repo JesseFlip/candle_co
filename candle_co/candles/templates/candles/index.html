@@ -2,10 +2,10 @@
 
 {% block body %}
     <h1>Candles</h1>
-    <ul>
-        {% for candle in candles %}
-            <li>{{ candle.name }}  - ${{ candle.price }}  Instock: {{ candle.inventory}}</li>
-        {% endfor %}
-    </ul>
+    
+    {% for candle in candles %}
+        {{ candle.name }}  - ${{ candle.price }}  Instock: {{ candle.inventory}} <br>
+    {% endfor %}
+    
 
 {% endblock %}
